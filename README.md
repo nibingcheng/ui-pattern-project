@@ -82,7 +82,6 @@ This is a non-exhaustive list:
 1. Marvel: developer.marvel.com
 1. Star Wars: swapi.dev
 1. Weather: openweathermap.org/api
-1. News: newsapi.org
 1. Giphy: developers.giphy.com
 1. Pokemon: http://pokeapi.co
 1. Google Books: developers.google.com/books
