@@ -5,7 +5,12 @@ h1, form {
     margin: 0;
     background-color: bisque;
   }
+
 button {
     display: inline-block;
   
 }  
+
+form {
+    font-size: 12px;
+}
