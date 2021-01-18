@@ -10,21 +10,23 @@ h1 {
     background-color: #323032;
     color: #ececec;
     margin-top: 0;
+    margin-bottom: 35px;
   }
 
-button {
+.button {
     border: none;
     margin: 0;
     background-color: #525452;
     color: #ecefec;
     font-size: 18px;
-    padding: 10px 35px;    
+    padding: 10px 20px;    
     text-align: center;
+    cursor: pointer;
 }  
 
 form {
     margin-bottom: 10px;
-    /* font-size: 1em; */
+    background-color: blanchedalmond;
     padding-left: 5%;
 }
 
@@ -49,7 +51,7 @@ img {
     grid-area: a;
     /* object-fit: cover; */
     width: 100%;
-    height: 100%;
+    height: auto;
     padding-top: 15px;
 }
 .title {
@@ -63,5 +65,50 @@ img {
 }
 
 .active {
-    background-color: black;
+    background-color: #203203;
+}
+
+.ham {
+    display: none;
+    cursor: pointer;
+    /* background-color: transparent; */
+    background-image: url(hamburgerMenu.png);
+    height:  32px;
+    width: 32px;
+}
+
+@media (max-width: 737px) {
+    main {
+        display: grid;  
+        margin: 0 auto; 
+        width: 55%;
+        grid-template-areas: "a" "b" "c";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    img {
+        /* object-fit: cover; */
+        width: 100%;
+        height: 100%;
+    }
+    .title {
+        padding-top: 15px;
+        padding-left: 0;
+    }
+    .explanation {
+        padding-left: 0;
+        font-size: 12px;  
+    }
+    .button {
+        font-size: 12px;
+        background-color: transparent;   
+        color: #203203;
+    }
+    .tabs {
+        /* flex-direction: column; */
+        display: block;
+        text-align: center;
+        background-color: transparent;
+    }
 }
